@@ -1,0 +1,11 @@
+<div class="insert_div">
+    <h1 class="title_insert">Atualizando o livro: {{tarefa.title}}</h1> 
+    <form action="/update/task" method="post" class="form_insert"> 
+        <input type="hidden" name="id" value="{{tarefa.id}}">
+        <label for="tarefa">Nome do livro:</label> <br>
+        <input type="text" name="title" id="title" value="{{tarefa.title}}"> <br>
+        <label for="tarefa">Quantidade de páginas:</label> <br>
+        <input type="int" name="pags" id="pags" value="{{tarefa.pags}}"> <br>
+        <input type="submit" value="Editar">
+    </form> 
+</div>
